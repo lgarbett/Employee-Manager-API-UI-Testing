@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "3c68f8b3-0f95-45bd-a81a-f680613af92f",
+		"name": "Employee Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "712fa672-637c-4541-9699-931d1dafb80a",
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "6943132c-c9e3-447a-be76-c61619215978",
+			"name": "Post Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"15000\",\n\t\"name\":\"AJ Larson\",\n\t\"phone\":\"8019896524\",\n\t\"email\":\"aj@devmounta.in\",\n\t\"title\":\"Lead Instructor\"\n}"
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "69da26dc-afdb-4632-b0cc-50ca9175f22e",
+			"name": "Put Employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/15000?name=Andrew Larson&phone=8019896524&title=Leader&email=aj@devmountain.com",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"15000"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Andrew Larson"
+						},
+						{
+							"key": "phone",
+							"value": "8019896524"
+						},
+						{
+							"key": "title",
+							"value": "Leader"
+						},
+						{
+							"key": "email",
+							"value": "aj@devmountain.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "970fd236-4888-455d-9b8b-d1a347e76993",
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/2100",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"2100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
